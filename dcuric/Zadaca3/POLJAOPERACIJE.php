@@ -50,10 +50,22 @@ for($i = 0; $i< $d; $i++) {
     echo "<br>".ucfirst($studenti[$i]);
     echo "<br>";
 }
-//neidee
-//$polje1=array();
-//$polje2=array();
 
+echo "<br>";
+
+$neparni = array();
+$parni = array();
+foreach ($studenti as $k => $v) {
+    if ($k % 2 == 0) {
+        $parni[$k] = $v;
+    }
+    else {
+        $neparni[$k] = $v;
+    }
+}
+echo "<br/>";
+print_r($neparni);echo "<br/>";echo "<br/>";
+print_r($parni);echo "<br/>";echo "<br/>";
 
 $polje10temperatura=array(10,16.7,22,34,7,18.25,21,12,3,17.9);
 
