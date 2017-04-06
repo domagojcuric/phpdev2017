@@ -12,15 +12,23 @@ function kvadrat($x){
     return $x*$x;
 }
 
-function polje_kvadrata($array1){
-    for($i=0;$i<count($array1);$i++){
-        $fa=$array1[$i]*$array1[$i];
-        echo $fa." ";
+
+function polje_kvadrata($array1)
+{
+    for($i=0;$i<count($array1);$i++)
+    {
+         $array1[$i]=$array1[$i]*$array1[$i];
     }
+    return $array1;
 }
 
-$p1=array(8,5,6,7,23,45,6,7,89,99,0,1,999);
-echo polje_kvadrata($p1);
+$p1=array(1,2,3,4,5,6,7,8,9);
+echo "<br>";
+echo print_r($p1);
+echo "<br>";
+print_r(polje_kvadrata($p1));
+ 
+  
 
 echo "<hr>";
 
