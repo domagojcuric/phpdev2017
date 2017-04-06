@@ -2,10 +2,9 @@
 
 
 $a = 22.5;
-$b = 5.25;
-$c = NULL;
+$b = 5.25 ;
 
-$c  =$a + $b;
+$c = (double)($a + $b);
 echo var_dump($c);
 echo "<hr>";
 
