@@ -5,14 +5,16 @@ function main($oper, &$a, &$b) {
 
 	switch($oper) {
 		case "zbroj":
-                    echo zbr($a, $b);
+
+			echo zbr($a, $b);
 			break;
 		case "razlika":
 			echo razl($a, $b);
+=======
 			break;
-		case "umnozak":
-			echo mno($a, $b);
-			break;
+		// case "umnozak":
+		// 	return mno($a, $b);
+		// 	break;
 		case "podjela":
 			echo dij();
 			break;
@@ -33,27 +35,28 @@ function razl(&$a, &$b) {
 }
 
 
-/*
-function mno($a, $b) { 
-	static $proceed = true;
-
-	if ( $proceed == true ) {
-		$stringa = preg_replace("/0+\./", '', (string)$a);
-		$stringb = preg_replace("/0+\./", '', (string)$b);
-		$x = strlen($a)-2;
-		// $y = strlen($b)-2;
-		static $brojac = strlen($b)-2;
-
-		$umnozak = (double)((( (int)$stringa*(int)$stringb ) / 10**$x ) / 10**$y );
 
 
-		$proceed = false;
-	}
+// function mno($a, $b) { 
+// 	static $proceed = true;
 
-	if ( $brojac < )
+
+// 	if ( $proceed == true ) {
+// 		$stringa = preg_replace("/0+\./", '', (string)$a);
+// 		$stringb = preg_replace("/0+\./", '', (string)$b);
+// 		$x = strlen($a)-2;
+// 		// $y = strlen($b)-2;
+// 		static $brojac = strlen($b)-2;
+
+// 		$umnozak = (double)((( (int)$stringa*(int)$stringb ) / 10**$x ) / 10**$y );
+
+
+// 		$proceed = false;
+// 	}
+
+// 	if ( $brojac < )
 		
-}
-*/
+
 
 
 function dij() {
@@ -71,6 +74,6 @@ main("razlika", $a, $b);
 echo "<br>";
 main("podjela", $a, $b);
 echo "<br>";
-//echo main("umnozak", $a, $b);
+
 
  ?>
