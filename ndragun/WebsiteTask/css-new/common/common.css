@@ -1,0 +1,76 @@
+@charset "UTF-8";
+body,dl,dd,h1,h2,h3,h4,h5,h6,form,p,ul,ol{margin:0;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;font-size: 100%;}
+ul,ol{padding: 0;list-style:none;}
+img{border:0;}
+article, aside, dialog, footer, header, section, footer, nav, figure, menu{display: block;}
+i,em{font-style: normal;}
+.header a,
+.wrap a{color:#fff;text-decoration: none;}
+body{background-color: #010204;color: #fff;font:14px/1.5 'LinBiolinum',Arial,\5b8b\4f53,Verdana,Tahoma,Helvetica,sans-serif;}
+
+/* 第一版 */
+.btn-gminfo,
+.connect a,
+.btn-prev span,
+.btn-next span,
+.btn-prev:hover span,
+.btn-next:hover span,
+.btn-fav,.btn-reply,.btn-list,
+.btn-list.active,
+.main-btn,
+.download-btn{background: url(../../images/sprite.png) no-repeat;}
+
+.ft-logo,
+.home,
+.banner-box .i-link,
+.link-list i,
+.popup-alert .iclose,
+.download1,
+.download2,
+.colspan h4 i,
+.inner .more-hero i{background: url(../../images/sprite.png) no-repeat;}
+
+.hide{display: none;}
+.l{float: left;}
+.r{float: right;}
+.content,.col-box{width: 1000px;margin:0 auto;}
+.i-drop{display:inline-block;width: 0;height: 0;margin-left:4px;border-width: 5px 4px 0 4px;border-color: #fff transparent transparent transparent;border-style: solid dashed dashed dashed;vertical-align: middle;}
+.i-top{display:inline-block;width: 0;height: 0;border-width: 0 11px 13px 11px;border-color: transparent transparent #252525 transparent;border-style: dashed dashed solid dashed;vertical-align: middle;}
+
+/* bg */
+.wrap-bg{position:absolute;z-index:-2;top: 50px;left:0;width:100%;}
+
+/* vedio */
+/* .ivBox,.popup-alert ////.ivBg,.popup-bg*/
+.popup-alert{display: none;position: fixed;left: 50%;top: 50%;width: 1024px;height: 578px;margin-top: -288px;margin-left: -512px;background: #000;z-index: 1001;}
+.popup-alert .ivCont{position: relative;height: 578px;}
+.popup-alert .iclose{position: absolute;right: 0;top: -30px;width: 22px;height: 22px;background-position: -217px -106px; color: #ddd;text-align: center;font-size: 30px;text-decoration: none;z-index: 11;}
+.popup-alert .iclose:hover{background-position: -243px -106px;}
+.popup-bg{display: none;position: fixed;top: 0;right: 0;bottom: 0;left: 0;background: #000;z-index: 1000;opacity: .6;filter: alpha(opacity=60);}
+
+/*Font*/
+@font-face {
+font-family: 'LinBiolinum';
+src: url('http://r2cdn2.r2games.com/en/gamesite/calibur/font/LinBiolinum.eot'); /* IE9*/
+src: url('http://r2cdn2.r2games.com/en/gamesite/calibur/font/LinBiolinum.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('http://r2cdn2.r2games.com/en/gamesite/calibur/font/LinBiolinum.woff') format('woff'), /* chromeã€firefox */
+     url('http://r2cdn2.r2games.com/en/gamesite/calibur/font/LinBiolinum.ttf')  format('truetype'), /* chromeã€firefoxã€operaã€Safari, Android, iOS 4.2+*/
+     url('http://r2cdn2.r2games.com/en/gamesite/calibur/font/LinBiolinum.svg#svgFontName') format('svg'); /*  iOS 4.1- */
+     font-weight: normal;
+     font-style: normal;
+     -webkit-font-smoothing:antialiased; 
+     -moz-osx-font-smoothing:grayscale;
+    }
+@font-face {
+font-family: 'texgyrepagella';
+src: url('http://r2cdn2.r2games.com/en/gamesite/calibur/font/texgyrepagella.eot'); /* IE9*/
+src: url('http://r2cdn2.r2games.com/en/gamesite/calibur/font/texgyrepagella.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('http://r2cdn2.r2games.com/en/gamesite/calibur/font/texgyrepagella.woff') format('woff'), /* chromeã€firefox */
+     url('http://r2cdn2.r2games.com/en/gamesite/calibur/font/texgyrepagella.ttf')  format('truetype'), /* chromeã€firefoxã€operaã€Safari, Android, iOS 4.2+*/
+     url('http://r2cdn2.r2games.com/en/gamesite/calibur/font/texgyrepagella.svg#svgFontName') format('svg'); /*  iOS 4.1- */
+     font-weight: normal;
+     font-style: normal;
+     -webkit-font-smoothing:antialiased; 
+     -moz-osx-font-smoothing:grayscale;
+    }

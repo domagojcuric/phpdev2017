@@ -1,0 +1,38 @@
+.i-s-facebook,
+.i-s-yahoo,
+.i-s-google,
+.i-s-live {background-image: url(../images/sprite.png); background-repeat: no-repeat; float:left; width:14px; height:14px; margin:19px 3px 0 0; overflow:hidden;}
+.i-s-facebook {background-position:-1px -145px;}
+.i-s-yahoo {background-position:-31px -145px;}
+.i-s-google {background-position:-16px -145px;}
+.i-s-live {background-position:-46px -145px;}
+
+body{padding-top: 50px !important;}
+.gm-offical-top {position:fixed; top:0; left:0; z-index:999; width:100%; height:50px; background:#fff;}
+.gm-offical-top .logo {float:left; _display:inline; width:139px; height:50px; margin-right:60px; padding-left:20px; background:url(../images/gm_offical_top_logo.jpg) no-repeat 20px center; text-indent:-999em; overflow: hidden;}
+.gm-offical-top .logo a {display:block; width:139px; height:50px;}
+.gm-offical-top .game-list {float:left;}
+.gm-offical-top .game-list h3 {line-height:50px; overflow: hidden; zoom:1; font-size:14px;}
+.gm-offical-top .game-list h3 span {float:left;}
+.gm-offical-top .i-drop {float:left; width:0; height:0; margin-top:22px; margin-left:8px; border-style:solid dashed dashed dashed; border-width:6px 4px 0 4px; border-color:#474444 transparent transparent transparent; font-size:0;}
+.gm-offical-top .sign-box {float:right; height:50px;}
+.gm-offical-top .sign-box .btn {float:left; width:78px; height:24px; line-height: 24px; margin-top:14px; border:1px solid #fff; text-decoration: none; text-align:center;}
+.gm-offical-top .sign-box .btn-nobg {width:60px; padding-left:18px; background:url(../images/gm_offical_top_icon.png) no-repeat 10px 6px; -moz-border-radius:3px; border-radius:3px; -moz-border-radius:3px; border:1px solid #c7c7c7;}
+.gm-offical-top .store-link {float:right; _display:inline; width:65px; height:24px; line-height:24px; margin:15px 28px auto 35px; padding-left:25px; background:url(../images/gm_offical_top_icon.png) no-repeat 0 -18px; text-decoration:none;}
+.gm-offical-top .user-img {float:left; margin:12px 5px 0 10px;}
+.gm-offical-top .user-img img { width: 25px; height: 25px; border: 1px solid #b2b2b2; border-radius: 3px;}
+.gm-offical-top .user-name {float:left; line-height:50px;}
+.gm-offical-top .drop-box {float:left; position:relative; margin-right: 22px;}
+.gm-offical-top .drop-list {display:none; position:absolute; top:39px; left:42px;  padding:8px 0; background: #fff; border:1px solid #e0e0e0;}
+.gm-offical-top .drop-list li {margin:4px 0; text-align: left; text-indent: -9999px;}
+.gm-offical-top .drop-list li a {display: block; width: 60px; padding:0 6px; text-indent: 0px; line-height:27px; color:#666; text-align:center; text-decoration: none;}
+.gm-offical-top .drop-list li a:hover {background-color:#b8b8b8; text-decoration: none;}
+.gm-offical-top .drop-box .i-drop {border-width:5px 4px 0 4px;}
+
+
+/*header client*/
+.btn-client .i-client{float: left; width: 14px; height: 14px; margin-top: 4px; margin-left: -20px; background: url(../images/gm_offical_top_icon.png) no-repeat 0 -43px;} 
+.gm-offical-top .sign-box .btn-client{width: 65px;cursor: pointer; margin-right: 1em; padding-left: 30px; color: #fff; border-radius: 0; background-image: -webkit-gradient(linear,top,bottom,color-stop(100%,rgba(222,63,5,1)),color-stop(100%,rgba(189,27,33,1))); background-image: -webkit-linear-gradient(top,rgba(222,63,5,1),rgba(189,27,33,1)); background: linear-gradient(to bottom,rgba(222,63,5,1),rgba(189,27,33,1)); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffde3f05',EndColorStr='#ffbd1b21'); text-align: left;} 
+
+.btn-client1 .i-client1{float: left; width: 14px; height: 14px; margin-top: 4px; margin-left: -20px; background: url(../images/gm_offical_top_icon.png) no-repeat 0 -43px;} 
+.gm-offical-top .sign-box .btn-client1{width: 75px;cursor: pointer; margin-right: 1em; padding-left: 30px; color: #fff; border-radius: 0; background-image: -webkit-gradient(linear,top,bottom,color-stop(100%,rgba(122,63,5,1)),color-stop(100%,rgba(89,27,33,1))); background-image: -webkit-linear-gradient(top,rgba(122,63,5,1),rgba(89,27,33,1)); background: linear-gradient(to bottom,rgba(122,63,5,1),rgba(89,27,33,1)); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffde3f05',EndColorStr='#ffbd1b21'); text-align: left;} 

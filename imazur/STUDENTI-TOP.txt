@@ -1,0 +1,16 @@
+USE fakultet;
+CREATE VIEW v_topstudenti_2003 AS 
+SELECT * FROM ispit WHERE mbrstud=1132;
+
+SELECT ispit.mbrStud, 
+count(*)/*<-broj izlazaka*/, 
+AVG(ispit.ocjena) AS prosjek,
+(0.99*AVG(ispit.ocjena) + count(*)*0.231) AS rank,
+
+YEAR(ispit.datIspit) AS godina
+FROM ispit
+WHERE ispit.ocjena > 1
+AND YEAR(ispit.datIspit)=2003
+GROUP BY mbrstud/*studenti samo oni koji su izišli na ispit*/
+ORDER BY rank DESC;
+SELECT count(stud.mbrStud) AS ukupan_br_studenata  FROM stud; /*svi studenti*/

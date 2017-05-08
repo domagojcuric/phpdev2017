@@ -1,0 +1,127 @@
+UPDATE fakultet.stud SET stud.imeStud='Vlatko' WHERE stud.mbrStud=1136;
+SELECT * FROM stud WHERE stud.mbrStud=1136;
+
+/*
+INSERT INTO stud (imeStud,prezStud,pbrStan) VALUES ('yyyxxxx','qqqwwww', 31000);
+*/
+
+DELETE FROM stud WHERE stud.mbrStud=1521;
+
+
+SELECT * FROM stud INNER JOIN mjesto
+ON stud.pbrRod = mjesto.pbr;
+
+SELECT 
+stud.imeStud,
+stud.prezStud,
+stud.pbrStan,
+mjesto.nazMjesto,
+mjesto.sifZupanija
+FROM stud INNER JOIN mjesto
+ON stud.pbrStan = mjesto.pbr
+LIMIT 11,10;
+
+SELECT 
+stud.imeStud,
+stud.prezStud,
+stud.pbrStan,
+mjesto.nazMjesto,
+mjesto.sifZupanija
+FROM stud INNER JOIN mjesto
+ON stud.pbrStan = mjesto.pbr
+WHERE mjesto.nazMjesto LIKE 'Sp%'
+LIMIT 5,7;
+
+SELECT 
+stud.imeStud,
+stud.prezStud,
+stud.pbrStan,
+mjesto.nazMjesto,
+mjesto.sifZupanija
+FROM stud INNER JOIN mjesto
+ON stud.pbrStan = mjesto.pbr
+WHERE mjesto.nazMjesto LIKE 'Sp%'
+ORDER BY stud.prezStud ASC
+LIMIT 5,7;
+
+SELECT 
+stud.imeStud,
+stud.prezStud,
+stud.pbrStan,
+mjesto.nazMjesto,
+mjesto.sifZupanija
+FROM stud INNER JOIN mjesto
+ON stud.pbrStan = mjesto.pbr
+GROUP BY stud.prezStud ASC;
+
+SELECT 
+stud.imeStud,
+stud.prezStud,
+stud.pbrStan,
+mjesto.nazMjesto,
+mjesto.sifZupanija
+FROM stud INNER JOIN mjesto
+ON stud.pbrStan = mjesto.pbr
+ORDER BY stud.prezStud ASC, stud.imeStud ASC, stud.pbrStan DESC ;
+
+CREATE TABLE studmjesto
+SELECT 
+stud.imeStud,
+stud.prezStud,
+stud.pbrStan,
+mjesto.nazMjesto,
+mjesto.sifZupanija
+FROM stud INNER JOIN mjesto
+ON stud.pbrStan = mjesto.pbr
+ORDER BY stud.prezStud ASC, stud.imeStud ASC;
+
+SELECT 
+stud.imeStud,
+stud.prezStud,
+stud.pbrStan,
+mjesto.nazMjesto,
+mjesto.sifZupanija
+FROM stud INNER JOIN mjesto
+WHERE mjesto.sifZupanija LIKE '21%'
+ON stud.pbrStan = mjesto.pbr
+ORDER BY stud.prezStud ASC, stud.imeStud ASC;
+
+USE fakultet;
+CREATE TEMPORARY TABLE studmjesto1 
+SELECT 
+stud.imeStud,
+stud.prezStud,
+stud.pbrStan,
+mjesto.nazMjesto,
+mjesto.sifZupanija
+FROM stud INNER JOIN mjesto
+WHERE mjesto.sifZupanija LIKE '21%'
+ORDER BY stud.prezStud ASC, stud.imeStud ASC;
+
+USE fakultet;
+CREATE VIEW v_studmjesto AS
+SELECT 
+stud.imeStud,
+stud.prezStud,
+stud.pbrStan,
+mjesto.nazMjesto,
+mjesto.sifZupanija
+FROM stud INNER JOIN mjesto
+WHERE mjesto.sifZupanija LIKE '21%'
+ORDER BY stud.prezStud ASC, stud.imeStud ASC;
+
+
+SELECT LOWER(
+	CONCAT(
+		RIGHT(
+			REVERSE(v_studmjesto.imeStud),3), 
+				LEFT(v_studmjesto.prezStud,3))) AS username FROM v_studmjesto;
+
+
+SELECT MONTH(stud.datRodStud) AS rodjos, stud.imeStud FROM stud
+HAVING rodjos=4;
+
+SELECT AVG(ispit.ocjena) AS prosjek FROM ispit;
+
+SELECT AVG(ispit.ocjena) AS prosjek FROM ispit
+WHERE ispit.sifPred=37;

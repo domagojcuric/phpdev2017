@@ -9,8 +9,13 @@
 
     
         <h1 style ="color:blue;text-align:center" >osijek</h1>
-           
-    
+  
+            
+<?php
+echo '<i style="color:white;font-size:30px;font-family:tahoma;">
+       grad na dravi </i> ';
+echo "<br>";
+?>    
 <br>
 
 
@@ -21,7 +26,7 @@
             <th><font color="white">povijest</font></th>
             <th><font color="white">znamenitosti</font></th>
         </tr>
-    </thead>
+        </thead>
             <tr>
                 <td><font color="white">Prvi tragovi života <br> Colonia Aelia Mursa <br> Nukleus budućeg Osijeka <br> Prvi spomen imena grada <br>
                 Osijek pada pod Osmanlije <br> “Šaptom pade” u kršćanske ruke <br> Tri općine u jednom <br> Slobodni i kraljevski grad 

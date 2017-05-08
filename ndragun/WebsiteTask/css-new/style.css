@@ -1,0 +1,114 @@
+@import url(common/common.css);
+@import url(common/header.css);
+@import url(common/hack.css);
+
+.banner-box{height: 279px;padding-top: 225px;padding-left: 500px;}
+.banner-box .txt{position:relative; width: 500px;background-color:rgba(1,2,4,0.5);}
+.banner-box .tit,
+.banner-box .abs{display:block;padding-left: 10px;padding-right: 60px;}
+.banner-box .tit{padding-top:8px;font-size: 30px;font-weight: bold;text-transform: uppercase;}
+.banner-box .abs{padding-bottom: 16px;}
+.banner-box .i-link{position: absolute;top:50%;right: 10px;width: 18px;height: 29px;margin-top: -15px; background-position: -46px -92px;}
+
+/* focus img */
+.focus-box{height: 270px;margin-bottom: 26px; background-color: #1e1f23;}
+.focus-box li{float: left;width:318px;margin-left: 12px;margin-top: 12px;}
+.focus-box .img{width: 318px;height: 210px;overflow: hidden;}
+.focus-box img{display: block;}
+.focus-box a img{opacity: 0.6;filter:Alpha(opacity=60); transition: 0.2s;}
+.focus-box a:hover img{opacity: 1;filter:Alpha(opacity=100);}
+.focus-box .txt{display:block;height: 36px;padding-left:19px;line-height: 36px;background-color: #000;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+
+/* news-list */
+.col-box{overflow: hidden;}
+.colspan1,
+.colspan2{float: left;}
+.colspan1{width: 688px;background-color: #202125;}
+.colspan2{width: 312px;background-color: #1b1c1f;box-shadow: inset 5px 0 18px #000;}
+.colspan1 .hd{height:36px;background-color: #17171a;border-top:1px solid #323232;}
+.colspan1 .hd li{float: left;width: 146px;height: 36px;border-right:1px solid #323232;font-size: 16px; text-align: center;text-transform: uppercase;cursor: hand;cursor: pointer;}
+.colspan1 .hd .current{
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(99,99,100,1)),color-stop(100%,rgba(199,199,199,1)));
+	background-image: -webkit-linear-gradient(top,rgba(99,99,100,1),rgba(199,199,199,1)); 
+	background: linear-gradient(to bottom,rgba(99,99,100,1),rgba(199,199,199,1)); 
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#636364',EndColorStr='#c7c7c7');}
+.colspan1 .hd a{display: block;height: 36px;line-height: 36px;}
+.colspan1 .hd .current a{color:#000;}
+
+.colspan1 .bd{min-height:600px;padding-left: 24px;padding-right: 24px;padding-bottom: 20px;}
+.news-box li{position: relative;padding-top: 22px;color: #9a9a9a;}
+.news-box .tit{width: 600px;font-size: 22px;}
+.index-wrap .news-box .tit{overflow: hidden;text-overflow: ellipsis;white-space: nowrap; color: #ffd800;}
+.news-box .tit a{color:#9a9a9a;}
+.news-box .tit a:hover{color:#fff;text-decoration: underline;text-shadow: 0 0 2px #fff;}
+.news-box .type{position:relative;color: #eee;padding: 20px 0;}
+.news-box .time{position: absolute;right:0;top: 0;color:#9a9a9a;}
+.news-box .img{margin-top: 20px;margin-bottom: 22px; overflow: hidden;}
+.news-box .img img{width:100%;border:1px solid #36373a;}
+.news-box .txt-bd a{color: #edbe00;text-decoration: underline;}
+.news-box .author{color:#c3221c;}
+.news-box .type .img img{max-width:100%;border:1px solid #36373a;}
+.news-box .type img{max-width:100%;border:1px solid #36373a;}
+.news-box .type .img{max-width:100%;border:1px solid #36373a;}
+
+/* right */
+.colspan2 .top{padding-left: 10px;box-shadow: 5px 5px 18px #000;}
+.colspan2 .bot{padding-top: 6px;padding-bottom: 20px;}
+.colspan2 .btn-download{display: block;width: 290px;height: 66px;margin-top: 5px;line-height: 66px;color:#fff;font-size: 27px;font-weight: bold;text-align: center;text-shadow: 1px 1px 8px #000;}
+.popup-download{position: fixed;top:50%;left:50%;margin-left: -178px;margin-top: -37px;z-index: 1001;}
+.popup-download .close{position: absolute;right: -15px;top:-35px; color:#807f7f;font-size: 36px;}
+.download-list li a{display: block;width: 290px;height: 66px;margin-bottom: 9px; background: url(../images/download.png) no-repeat;}
+.down-title{position: relative; padding-top: 15px; color: #9a9a9a;text-align: center;}
+.down-title span{position: absolute;left:0;top:24px; width: 100%;height: 14px;background: url(../images/download.png) no-repeat 0 -134px;}
+
+.download-list{padding-top: 5px; padding-bottom: 10px;padding-left: 2px;}
+.download-list .app a{background-position: 0 0;}
+.download-list .google a{background-position: 0 -67px;}
+
+
+.colspan2 .other-link{height:40px;background-color: #111214;color:#fff;line-height: 40px; font-size: 16px;text-indent: 18px;}
+.link-list{overflow: hidden;height: 112px; padding-left: 16px;padding-top: 4px;}
+.link-list li{float:left;width: 142px;height:36px;margin-top: 12px;line-height: 36px;}
+.link-list li a{color:#9a9a9a;}
+.link-list li a:hover{color:#fff;}
+.link-list i{float: left;width: 36px;height: 36px;margin-right: 10px;}
+.link-list .fb i{background-position: -66px -92px;}
+.link-list .tw i{background-position: -103px -92px;}
+.link-list .gg i{background-position: -140px -92px;}
+.link-list .yt i{background-position: -177px -92px;}
+.colspan2 .img{width: 268px;height: 154px;margin:16px auto 0;border:1px solid #090a0b;box-shadow: 0px 0px 5px #000;}
+.colspan2 .img a img{opacity: 0.6;filter:Alpha(opacity=60);transition: 0.2s;}
+.colspan2 .img a:hover img{opacity: 1;filter:Alpha(opacity=100);}
+
+/* bg */
+.wrap-bg .bg-01{min-width:1000px;height:799px;margin:0 auto;background:url(../images/bg_new.png) top center no-repeat;}
+
+/* news content */
+.news-wrap .news-box{position: relative; padding-top: 34px; color: #9a9a9a;}
+.news-wrap .txt-bd{margin-top: 25px;}
+.news-wrap .txt-bd img{max-width: 640px;border:1px solid #36373a;}
+.news-wrap .colspan1 .bd{padding-bottom: 0;}
+.news-wrap .share{margin-top: 60px;padding-bottom: 20px;border-bottom: 1px solid #2a2b2f;text-align: right;}
+.pages{height: 45px;line-height: 45px;}
+.pages .prev{float: left;}
+.pages .next{float: right;}
+.pages .prev,.pages .next{color: #9a9a9a;}
+.pages .prev:hover,.pages .next:hover{color: #fff;text-decoration: underline;}
+
+.colspan2 .mid{padding:24px 28px 14px;}
+.colspan2 .mid li{margin-bottom: 10px;}
+.colspan2 .mid .tit{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.colspan2 .mid a{color:#e8e8e8;}
+.colspan2 .mid a:hover{text-decoration: underline;}
+.colspan2 .mid .time{color: #9a9a9a;}
+
+
+/* custom */
+.author{color:#c3221c;}
+.tit{color:#eee;}
+.colspan2 .mid a{color:#9a9a9a;font-size: 14px; padding: 0px; margin:0px; transition: 0.2s;}
+.colspan2 .mid a:hover{color:#ffd800; text-decoration: none; }
+
+.type a{color:#e36f00; transition: 0.2s;}
+.type a:hover{color:#c3221c;}
+

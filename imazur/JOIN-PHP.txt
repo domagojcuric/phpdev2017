@@ -1,0 +1,35 @@
+SELECT stud.imeStud, stud.prezStud, stud.mbrStud
+FROM stud
+WHERE LENGTH(stud.imeStud) >= 7
+AND LENGTH(stud.prezStud) >= 8
+;
+
+SELECT stud.imeStud, stud.prezStud, stud.mbrStud
+FROM stud
+WHERE LENGTH(stud.imeStud) >= 7
+AND LENGTH(stud.prezStud) <= 5
+;
+
+
+/* SELECT stud.*, ispit.* */
+SELECT CONCAT(stud.imeStud,' ', stud.prezStud) AS "ime i prezime"
+FROM stud, ispit  /* ovo tu se nikada ne radi- nikada se ne porebiru podaci kroz dvije ili više tablica -vektorski nešto jer æe to sve puknuti-amaterizam i ne kontaš bazu podataka 
+->KORISTI SE NAREDBA JOIN */
+WHERE stud.mbrStud=ispit.mbrStud
+AND ispit.ocjena=1
+AND ispit.sifPred BETWEEN 220 AND 240
+;
+
+SELECT stud.imeStud, stud.prezStud
+FROM stud INNER JOIN ispit
+ON stud.mbrStud=ispit.mbrStud
+AND ispit.ocjena=1
+AND ispit.sifPred BETWEEN 220 AND 240
+;
+
+SELECT *
+FROM stud JOIN ispit
+ON stud.mbrStud=ispit.mbrStud
+AND ispit.ocjena=1
+AND ispit.sifPred BETWEEN 220 AND 240
+;

@@ -1,7 +1,7 @@
 <?php
 
 $a = (int) $a = 100.99;  
-$b = (double) $b = 99.09;
+$b = 99.09;
 
 echo $a;
 echo "<br>";
@@ -43,9 +43,10 @@ echo "<hr>";
 echo strlen ("Ivan Mazur");
 echo "<hr>";
 
-$num777;
-
-
-
+$num777=777;
+for ($w=0; $w<=$num777; $w +=5)
+{
+echo "svaki peti je: $w <br>";
+}
   
-?>
+

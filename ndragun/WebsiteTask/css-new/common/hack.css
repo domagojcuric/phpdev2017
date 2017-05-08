@@ -1,0 +1,28 @@
+.ie8 .main-menu,
+.ie7 .main-menu,
+.ie6 .main-menu{background-color: #1c1e22;}
+.ie8 .nav>li a:hover,
+.ie8 .selected a:hover,
+.ie7 .nav>li a:hover,
+.ie7 .selected a:hover,
+.ie6 .nav>li a:hover,
+.ie6 .selected a:hover,
+.ie8 .drop-list li a,
+.ie7 .drop-list li a,
+.ie6 .drop-list li a{background-color:#000;}
+.ie8 .drop-list li a:hover,
+.ie7 .drop-list li a:hover,
+.ie6 .drop-list li a:hover{background-color:#fff;}
+.ie8 .banner-box .txt,
+.ie7 .banner-box .txt,
+.ie6 .banner-box .txt{background-color: #000;}
+.ie7 .drop-list li{line-height: 29px;}
+.ie6 .hr-classify li,
+.ie7 .hr-classify li{width: 124px;}
+.ie6 .hero-list .img:hover,
+.ie7 .hero-list .img:hover{border: 1px solid #392c00;}
+.ie8 .swiper-slide,
+.ie7 .swiper-slide{float: left;}
+.ie8 .swiper-slide .img,
+.ie7 .swiper-slide .img{width: 162px;height: 268px;}
+

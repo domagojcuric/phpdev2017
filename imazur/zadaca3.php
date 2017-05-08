@@ -1,19 +1,23 @@
 <?php
 
-$studenti = array (1 => "marko",
-                   2 => "ivan",
-                   3 => "noa",
-                   4 => "maja",
-                   5 => "iva",
-                   6 => "sandra",
-                   7 => "tonka",
-                   8 => "jelena",
-                   9 => "vanja",
-                  10 => "mario");
+$studenti = array ( "marko",
+                    "ivan",
+                    "noa",
+                    "maja",
+                    "iva",
+                    "sandra",
+                    "tonka",
+                    "jelena",
+                    "vanja",
+                    "mario");
 echo "<hr>";
-$f = array_filter(array_keys($studenti), function ($value){ return strlen($value)>5; });
-print_r($studenti);
 
+foreach ($studenti as  $kratkaimena) {
+    if (strlen($kratkaimena) <5)
+    echo $kratkaimena . "<br>";
+    
+}
+ 
 echo "<hr>";
 array_push($studenti,"ivana","mirta","melita","miro","bruno" );
 print_r($studenti);
@@ -67,7 +71,8 @@ echo "<br>";
 echo $average_of_temperature = array_sum($temperature) / count($temperature);
 echo "<hr>";
 
-
+//"zadatak jedan-ne valja-treba foreach---NAPRAVLJENO!, par-nepar je prekomplicirano-
+//--nemoj koristiti stvari koje ne razumiješ i nismo radili iliti ugnježdene funkcije";
 
 
 /* 

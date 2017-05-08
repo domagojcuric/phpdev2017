@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+ EVo još malo teksta i još malo teksta.
+=======
  EVo još malo teksta
+>>>>>>> f9164f495feb63e926e64587606378d3ed1ccf21
