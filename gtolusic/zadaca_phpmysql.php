@@ -38,7 +38,7 @@ echo "broj pronadjenih zapisa:".mysqli_affected_rows($spajanje);
 
 //drugi zadatak 3.10.2
 
-$query2="select nazpred from pred order by nazpred";
+$query2="select nazpred from pred order by nazpred asc";
 $result2=mysqli_query($spajanje, $query2);
 
 {

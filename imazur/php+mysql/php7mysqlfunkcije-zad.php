@@ -1,15 +1,15 @@
 <?php
-include("dbcon.php");
+include("dbconn.php");
 
-$querry = "SELECT*FROM stud WHERE pbrStan=10040";
-$result = mysqli_query($query);
+$query = "SELECT*FROM stud WHERE pbrStan=10040";
+$result = mysqli_query($db, $query);
 
-echo 'broj pronadjenih zapisa: '.mysqli_affected_rows();
+echo 'broj pronadjenih zapisa: '.mysqli_affected_rows($db);
 
-$querry = "SELECT*FROM stud WHERE pbrStan=10040";
+$query = "SELECT*FROM stud WHERE pbrStan=10040";
 $result = mysqli_query($db, $guery);
  
- $br_result = mysqli_affected_rows($db);
+ $br_result = mysqli_affected_rows($result);
  
  if($br_result <= 0){
      
@@ -22,7 +22,7 @@ $result = mysqli_query($db, $guery);
  }
  echo "<br>";
 
-if(mysqli_close($conn)){
+if(mysqli_close($db)){
      
      echo 'Konekcija zatvorena';
  } else {
@@ -33,34 +33,34 @@ if(mysqli_close($conn)){
 
 
 $query1 = "INSERT INTO dvorana(oznDvorana,kapacitet)";
-$query1 .="VALUES('M2', 14)";
+$query1 .= " VALUES('M2', 14)";
      
-$result1 = mysqli_query($conn, $query1);
+$result1 = mysqli_query($db, $query1);
    
-     echo "Zadnje pohranjeni ID :". mysqli_insert_id($result1);
+     echo "Zadnje pohranjeni ID: ". mysqli_insert_id($result1);
 
 $query2 = "SELECT imeStud, prezStud";
-$query2 .="FROM stud";
-$query2 .="WHERE pbrStan=10040";
+$query2 .= " FROM stud";
+$query2 .= " WHERE pbrStan=10040";
      
-     $result2 = mysqli_query($conn, $query2);
+     $result2 = mysqli_query($db, $query2);
     
     echo "Broj polja us zapisu:" . mysqli_num_fields($result2);
   
 
 
 $query1 = "SELECT imeStud, prezStud ";
-$query1 .= "FROM stud ";
-$query1 .="WHERE pbrStan=10040";
+$query1 .= " FROM stud ";
+$query1 .= " WHERE pbrStan=10040";
 $result1 = mysqli_query($query1);
 
     echo "broj polja u zapisu: ".mysqli_num_fields($result1);
 
 $query3 = "SELECT imeStud, prezStud";
-$query3 .="FROM stud";
-$query3 .="WHERE pbrStan=10000";
+$query3 .= " FROM stud";
+$query3 .= " WHERE pbrStan=10000";
     
-$result3 = mysqli_query($conn, $query3);
+$result3 = mysqli_query($db, $query3);
     
     echo "Broj zapisa: ". mysqli_num_rows($result3);
     

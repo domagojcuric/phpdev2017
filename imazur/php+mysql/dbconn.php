@@ -5,8 +5,8 @@ $password='';
 $database='fakultet';
 
 
-
-$db=mysqli_connect($server, $username, $password) or die (mysqli_error($conn));
+/*
+$db =  mysqli_connect($server, $username, $password) or die(mysqli_error(!$db));
 
 if($db)
 {
@@ -21,6 +21,17 @@ if($db)
 
     else
         echo ' greška prilikom spajanja';
+ * 
+ */
+    
+
+$db = mysqli_connect($server, $username, $password, $database);
+// Check connection
+if (!$db) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+?>
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates

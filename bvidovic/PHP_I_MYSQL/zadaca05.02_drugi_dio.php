@@ -4,18 +4,18 @@ include 'db_connection.php';echo "<br>";
 //mysql_insert_id
    
    
-     $query1 = "INSERT INTO dvorana(oznDvorana,kapacitet)";
-     $query1 .="VALUES('M2', 14)";
+     $query1 = "INSERT INTO dvorana(oznDvorana, kapacitet)";
+     $query1 .=" VALUES('M2','14')";
      
      $result1 = mysqli_query($conn, $query1);
    
-     echo "Zadnje pohranjeni ID :". mysqli_insert_id($result1);
+     echo "Zadnje pohranjeni ID :". mysqli_insert_id($conn);
      
    //mysql_num_rows
     
      $query2 = "SELECT imeStud, prezStud";
-     $query2 .="FROM stud";
-     $query2 .="WHERE pbrStan=10040";
+     $query2 .=" FROM stud";
+     $query2 .=" WHERE pbrStan=10040";
      
      $result2 = mysqli_query($conn, $query2);
      
@@ -24,8 +24,8 @@ include 'db_connection.php';echo "<br>";
      //mysql_num_rows
      
      $query3 = "SELECT imeStud, prezStud";
-     $query3 .="FROM stud";
-     $query3 .="WHERE pbrStan=10000";
+     $query3 .=" FROM stud";
+     $query3 .=" WHERE pbrStan=10000";
      
      $result3 = mysqli_query($conn, $query3);
      
